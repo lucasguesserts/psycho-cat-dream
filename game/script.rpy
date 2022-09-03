@@ -11,7 +11,7 @@ init python:
 label start:
     "Begin Game"
     
-    call morning
+    call livingRoomEvening
 
     "End Game"
     return
