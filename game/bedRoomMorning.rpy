@@ -1,3 +1,12 @@
+menu changeRoomBedRoom:
+    "Ir para o Banheiro":
+        e "Preciso fazer xixi"
+        return
+    "Ir para a cozinha":
+        e "Estou morta de fome"
+        call bathroom
+        return
+
 label wakeUpMorning:
     scene bedRoomMorning at center:
         zoom 0.19
@@ -5,9 +14,12 @@ label wakeUpMorning:
 
     e "Ah que preguiça!"
     
-    show elaineNormal
+    show elaineNormal at right:
+        xalign 0.7
     with pixellate
 
     e "Já está de manhã"
+
+    call changeRoomBedRoom
 
     return
