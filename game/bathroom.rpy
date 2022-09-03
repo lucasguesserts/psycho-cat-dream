@@ -9,3 +9,7 @@ label bathroomMorningTime:
     "E então %(player_name)s entrou no banheiro"
 
     scene bathroomMorning
+
+    menu sairBanheiro:
+        "corredor":
+            call corridorMorningTime

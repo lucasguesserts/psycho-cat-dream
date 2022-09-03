@@ -1,7 +1,7 @@
 menu changeRoomBedRoom:
     "Ir para o Banheiro":
         e "Preciso fazer xixi"
-        call bathroomMorningTime
+        call corridorMorningTime
         return
     "Ir para a cozinha":
         e "Estou morta de fome"
