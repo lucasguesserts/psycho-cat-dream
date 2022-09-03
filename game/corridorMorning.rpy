@@ -1,5 +1,8 @@
 image corridorMorning = Image("images/corridorMorning.jpg")
 
+init python:
+    running_at_corridor = True
+
 label corridorMorningTime:
     "E então %(player_name)s entrou no corredor"
 
@@ -19,6 +22,5 @@ label corridorMorningTime:
             jump actionsCorridorMorning
         
         "Sala":
-            "In development"
-            jump actionsCorridorMorning
+            jump LivingRoomMorning
         
