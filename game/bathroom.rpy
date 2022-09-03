@@ -1,4 +1,11 @@
-define player = Character("Asha Tenebris")
+image bathroomMorning = Image("images/bathroomMorning.jpg")
 
-label bathroom:
-    "E então %("player")s entrou no banheiro"
+init python:
+    player_name = "Asha Tenebris"
+
+define player = Character(player_name)
+
+label bathroomMorningTime:
+    "E então %(player_name)s entrou no banheiro"
+
+    scene bathroomMorning
