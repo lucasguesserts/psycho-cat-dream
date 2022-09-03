@@ -11,8 +11,6 @@ menu actionsBedroomMorning:
         return
     "Fazer carinho no gato":
         "%(player_name)s faz carinho no gato"
-        show cat at center: 
-            zoom 0.025
         cat "purrr"
         jump actionsBedroomMorning
     "Ler um livro":
@@ -34,6 +32,9 @@ label wakeUpMorning:
         xalign 0.7
         zoom 0.05
 
+    show cat at center: 
+            zoom 0.025
+
     with pixellate
 
     player "Já está de manhã"
@@ -48,4 +49,4 @@ label bedroomMorningTime:
 
     "De volta ao quarto..."
 
-    call actionsBedroomMorning
+    jump actionsBedroomMorning
