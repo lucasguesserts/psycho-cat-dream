@@ -1,7 +1,7 @@
 image parentsBedroomMorningImage = "images/parentsBedroomMorning.jpg"
 
 label parentsBedroomMorning:
-    $visited_parents_bedroom
+    $visited_parents_bedroom = True
 
     scene parentsBedroomMorningImage at center
     with zoomin
