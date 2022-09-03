@@ -13,6 +13,7 @@ label corridorMorningTime:
         "Quarto":
             jump bedroomMorning
 
+
         "Quarto dos pais":
             jump parentsBedroomMorning
         

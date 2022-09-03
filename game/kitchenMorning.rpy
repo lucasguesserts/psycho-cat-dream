@@ -23,5 +23,3 @@ label kitchenMorning:
 
         "Ir para o quarto":
             jump bedroomMorning
-
-    return
