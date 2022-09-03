@@ -1,5 +1,8 @@
 image kitchenMorning = "images/kitchenMorning.jpg"
 
+init python:
+    cookies_eaten = 0;
+
 label kitchenMorningTime:
     scene kitchenMorning at center:
         zoom 0.19
@@ -14,7 +17,8 @@ label kitchenMorningTime:
 
         "Roubar biscoitos no armário":
             player "que delícia!"
-            $ player_weight += 1
+            $ player_weight += 2**cookies_eaten
+            $ cookies_eaten += 1
             jump actionsKitchenMorning
 
         "Ir para o quarto":
