@@ -5,6 +5,8 @@ init python:
     visited_livingroom = False
     player_name = "Asha Tenebris"
     player_weight = 30
+    vase_is_broken = False
+    has_watched_tv_in_the_evening = False
 
 define player = Character(player_name, image = "player")
 

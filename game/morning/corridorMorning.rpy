@@ -13,6 +13,7 @@ menu actionsCorridorMorning:
 
     "Correr" if running_at_corridor and not running_at_corridor_second_time:
         $ running_at_corridor_second_time = True
+        $ vase_is_broken = True
         "%(player_name)s quebrou um vaso de R$100.000,00"
         jump actionsCorridorMorning
 
