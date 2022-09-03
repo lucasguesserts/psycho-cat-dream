@@ -3,3 +3,4 @@ define fatherMorning = Character(
 )
 
 image fatherMorningImage = "images/fatherMorning.png"
+image fatherEveningDeadImage = "images/fatherDead.png"
