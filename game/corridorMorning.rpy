@@ -1,5 +1,8 @@
 image corridorMorningImage = Image("images/corridorMorning.jpg")
 
+init python:
+    running_at_corridor = True
+
 label corridorMorning:
     "E então %(player_name)s entrou no corredor"
 

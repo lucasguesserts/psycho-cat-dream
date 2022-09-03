@@ -10,7 +10,7 @@ label kitchenMorning:
         zoom 0.19
     with pixellate
 
-    player "Que fome!"
+    player normal "Que fome!"
 
     menu actionsKitchenMorning:
         "Comer maçã":

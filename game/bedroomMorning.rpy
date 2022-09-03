@@ -21,9 +21,9 @@ label bedroomMorning:
         zoom 0.19
     with zoomin
 
-    player "Ah que preguiça!"
+    player normal "Ah que preguiça!"
     
-    show playerImage at right:
+    show player normal at right:
         xalign 0.7
         zoom 0.05
 
