@@ -1,10 +1,10 @@
 menu changeRoomBedRoom:
     "Ir para o Banheiro":
-        e "Preciso fazer xixi"
+        player "Preciso fazer xixi"
         call corridorMorningTime
         return
     "Ir para a cozinha":
-        e "Estou morta de fome"
+        player "Estou morta de fome"
         return
 
 label wakeUpMorning:
@@ -12,13 +12,13 @@ label wakeUpMorning:
         zoom 0.19
     with zoomin
 
-    e "Ah que preguiça!"
+    player "Ah que preguiça!"
     
     show elaineNormal at right:
         xalign 0.7
     with pixellate
 
-    e "Já está de manhã"
+    player "Já está de manhã"
 
     call changeRoomBedRoom
 
