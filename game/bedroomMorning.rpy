@@ -1,12 +1,8 @@
 image bedroomMorningImage = "images/bedRoomMorning.jpg"
 
 menu actionsBedroomMorning:
-    "Ir para o Banheiro":
-        player "Preciso fazer xixi"
+    "Ir para o corredor":
         jump corridorMorning
-    "Ir para a cozinha":
-        player "Estou morta de fome"
-        jump kitchenMorning
 
 label bedroomMorning:
     scene bedroomMorningImage at center:

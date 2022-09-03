@@ -17,6 +17,5 @@ label corridorMorning:
             jump parentsBedroomMorning
         
         "Sala":
-            "In development"
-            jump actionsCorridorMorning
+            jump livingRoomMorning
         
