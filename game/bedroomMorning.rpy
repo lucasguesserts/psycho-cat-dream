@@ -3,7 +3,7 @@ image bedroomMorningImage = "images/bedRoomMorning.jpg"
 menu actionsBedroomMorning:
     "Ir para o Banheiro":
         player "Preciso fazer xixi"
-        jump corridorMorningTime
+        jump corridorMorning
     "Ir para a cozinha":
         player "Estou morta de fome"
         jump kitchenMorning

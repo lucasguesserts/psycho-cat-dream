@@ -1,9 +1,9 @@
-image corridorMorning = Image("images/corridorMorning.jpg")
+image corridorMorningImage = Image("images/corridorMorning.jpg")
 
-label corridorMorningTime:
+label corridorMorning:
     "E então %(player_name)s entrou no corredor"
 
-    scene corridorMorning:
+    scene corridorMorningImage:
         zoom 2
 
     menu actionsCorridorMorning:

@@ -2,7 +2,7 @@ image bathroomMorningImage = Image("images/bathroomMorning.jpg")
 
 menu actionsBathroomMorning:
     "Ir para o corredor":
-        jump corridorMorningTime
+        jump corridorMorning
     
     "Tomar banho":
         player "Já tomei banho semana passada"
