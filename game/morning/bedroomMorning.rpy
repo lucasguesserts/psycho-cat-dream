@@ -8,7 +8,7 @@ menu actionsBedroomMorning:
         cat "purrr"
         jump actionsBedroomMorning
     "Ler um livro":
-        player "Nope, Tenho 10 anos, não vou ler! Vou jogar videogame."
+        player "Nope. Tenho 10 anos, não vou ler! Vou jogar videogame."
         "%(player_name)s jogou videogame por alguns minutos"
         jump actionsBedroomMorning
     "Dormir" if(visited_bathroom and visited_kitchen and visited_livingroom and visited_parents_bedroom):
@@ -27,7 +27,7 @@ label bedroomMorning:
         xalign 0.7
         zoom 0.05
 
-    show catImage at center: 
+    show cat normal at center: 
             zoom 0.025
 
     with pixellate

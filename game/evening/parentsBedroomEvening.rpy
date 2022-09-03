@@ -9,7 +9,7 @@ menu actionsParentsBedroomEvening:
 label parentsBedroomEvening:
     scene parentsBedroomEveningImage
 
-    show catImage at center:
+    show cat normal at center:
         zoom 0.025
 
     show fatherMorningImage:
@@ -21,7 +21,7 @@ label parentsBedroomEvening:
 
     scene darkRoomImage
 
-    hide catImage
+    hide cat normal
     hide fatherMorningImage
     "As luzes se apagaram"
 
