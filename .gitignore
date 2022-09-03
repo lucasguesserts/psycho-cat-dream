@@ -2,3 +2,4 @@ game/saves/*
 game/cache/*
 *.txt*
 *.rpyc*
+*.bak
