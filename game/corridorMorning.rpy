@@ -15,8 +15,7 @@ label corridorMorningTime:
             call wakeUpMorning
 
         "Quarto dos pais":
-            "In development"
-            jump actionsCorridorMorning
+            call parentsBedroomMorning
         
         "Sala":
             "In development"
