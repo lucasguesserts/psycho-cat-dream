@@ -5,3 +5,7 @@ label kitchenEvening:
         "Roubar biscoitos no armário":
             "Não há mais nenhum biscoito"
             jump actionsKitchenEvening
+
+        "Ir para o corredor":
+            "In development"
+            jump actionsKitchenEvening
