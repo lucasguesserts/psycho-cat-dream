@@ -5,7 +5,7 @@ menu actionsBathroomMorning:
         jump corridorMorning
     
     "Tomar banho":
-        player "Já tomei banho semana passada"
+        player normal "Já tomei banho semana passada"
         jump actionsBathroomMorning
     
     "Pesar-se":

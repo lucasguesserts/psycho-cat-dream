@@ -12,12 +12,12 @@ menu actionsLivingroomMorning:
         $running_at_livingroom = True
         jump actionsLivingroomMorning
     "Assistir TV":
-        player "Quero ver um desenho"
+        player normal "Quero ver um desenho"
         hide livingMorningImage
         scene TV at center:
             zoom 1.3
         with pixellate
-        player "Mãe, a TV não ta funcionando!!"
+        player normal "Mãe, a TV não ta funcionando!!"
         hide TV
         jump livingRoomMorning
     "Ir para corredor":

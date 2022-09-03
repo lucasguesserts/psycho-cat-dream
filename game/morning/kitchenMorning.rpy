@@ -14,7 +14,7 @@ label kitchenMorning:
 
     menu actionsKitchenMorning:
         "Comer maçã":
-            "A maçã sumiu!"
+            player "A maçã sumiu!"
             jump actionsKitchenMorning
 
         "Roubar biscoitos no armário":
