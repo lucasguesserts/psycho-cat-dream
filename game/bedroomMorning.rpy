@@ -1,17 +1,15 @@
-image bedroomMorning = "images/bedRoomMorning.jpg"
+image bedroomMorningImage = "images/bedRoomMorning.jpg"
 
 menu actionsBedroomMorning:
     "Ir para o Banheiro":
         player "Preciso fazer xixi"
-        call corridorMorningTime
-        return
+        jump corridorMorningTime
     "Ir para a cozinha":
         player "Estou morta de fome"
-        call kitchenMorningTime
-        return
+        jump kitchenMorning
 
-label wakeUpMorning:
-    scene bedroomMorning at center:
+label bedroomMorning:
+    scene bedroomMorningImage at center:
         zoom 0.19
     with zoomin
 
@@ -25,6 +23,4 @@ label wakeUpMorning:
 
     player "Já está de manhã"
 
-    call actionsBedroomMorning
-
-    return
+    jump actionsBedroomMorning

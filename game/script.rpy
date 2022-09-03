@@ -9,7 +9,7 @@ image playerNormal = "images/player.png"
 label start:
     "Begin Game"
     
-    call wakeUpMorning
+    call morning
 
     "End Game"
     return
