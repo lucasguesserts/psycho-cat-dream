@@ -10,8 +10,7 @@ menu actionsCorridorEvening:
         if has_watched_tv_in_the_evening:
             jump parentsBedroomEvening
         else:
-            "Under development"
-            # jump bathroomEvening
+            jump bathroomEvening
     "Quarto":
         jump livingRoomEvening
     "Banheiro":
