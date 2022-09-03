@@ -1,30 +1,32 @@
-image corridorEveningImage = Image("images/corridorEvening.jpg")
+image corridorEveningImage = Image("images/corridorEvening.png")
+
+init python:
+    first_time_in_corridor_evening = True
 
 menu actionsCorridorEvening:
     "Sala":
-        "Under development"
-        # jump kitchenEvening
+        jump kitchenEvening
     "Quarto dos pais":
-        "Under development"
-        # jump bathroomEvening
+        if has_watched_tv_in_the_evening:
+            jump parentsBedroomEvening
+        else:
+            "Under development"
+            # jump bathroomEvening
     "Quarto":
-        "Under development"
-        # jump livingRoomEvening
+        jump livingRoomEvening
     "Banheiro":
-        "Under development"
-        # jump bedroomEvening
-    "Quarto dos pais" if has_watched_tv_in_the_evening:
-        "Under development"
-        # jump parentsBedroomEvening
+        jump bedroomEvening
 
 label corridorEvening:
     scene corridorEveningImage:
         zoom 2
 
-    if vase_is_broken:
+    if vase_is_broken and first_time_in_corridor_evening:
         player normal "Eu não acredito!"
         player normal "Vaso estava quebrado!"
         player normal "Agora ele está inteiro"
         player normal "O que será que está acontecendo?"
+
+    $ first_time_in_corridor_evening = False
 
     jump actionsCorridorEvening
