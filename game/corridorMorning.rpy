@@ -4,7 +4,7 @@ label corridorMorningTime:
     "E então %(player_name)s entrou no corredor"
 
     scene corridorMorning:
-        zoom 6
+        zoom 2
 
     menu sairCorredor:
         "Banheiro":
