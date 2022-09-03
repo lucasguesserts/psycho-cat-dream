@@ -13,12 +13,16 @@ menu actionsLivingroomMorning:
         jump actionsLivingroomMorning
     "Assistir TV":
         player normal "Quero ver um desenho"
+        hide player
         hide livingMorningImage
+        
         scene TV at center:
             zoom 1.3
-        with pixellate
+
         player normal "Mãe, a TV não ta funcionando!!"
         hide TV
+        with pixellate
+
         jump livingRoomMorning
     "Ir para corredor":
         jump corridorMorning
@@ -32,7 +36,7 @@ label livingRoomMorning:
         scene livingMorningImage at center:
             zoom 0.28
         with zoomin
-        show   player normal at right:
+        show  player normal at right:
             xalign 0.7
             zoom 0.05
         with pixellate

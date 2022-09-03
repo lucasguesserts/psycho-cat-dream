@@ -12,6 +12,8 @@ label start:
     "Begin Game"
     
     call morning
+    
+    call evening
 
     "End Game"
     return
