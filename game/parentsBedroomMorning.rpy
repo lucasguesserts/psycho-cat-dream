@@ -14,4 +14,4 @@ label parentsBedroomMorning:
     fatherMorning "Aqui não é o seu quarto."
     fatherMorning "Vá brincar em outro local."
 
-    jump corridorMorningTime
+    jump corridorMorning
