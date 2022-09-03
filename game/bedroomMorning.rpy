@@ -11,6 +11,9 @@ menu actionsBedroomMorning:
         return
     "Fazer carinho no gato":
         "%(player_name)s faz carinho no gato"
+        show cat at center: 
+            zoom 0.025
+        cat "purrr"
         jump actionsBedroomMorning
     "Ler um livro":
         player "Nope, Tenho 10 anos, não vou ler! Vou jogar videogame."
@@ -19,7 +22,7 @@ menu actionsBedroomMorning:
     "Dormir" if(visited_bathroom and visited_kitchen and visited_livingroom and visited_parents_room):
         "%(player_name)s dormiu por várias horas"
 
-        
+
 label wakeUpMorning:
     scene bedroomMorning at center:
         zoom 0.19
