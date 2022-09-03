@@ -11,8 +11,9 @@ menu actionsBedroomMorning:
         player "Nope, Tenho 10 anos, não vou ler! Vou jogar videogame."
         "%(player_name)s jogou videogame por alguns minutos"
         jump actionsBedroomMorning
-    "Dormir" if(visited_bathroom and visited_kitchen and visited_livingroom and visited_parents_room):
+    "Dormir" if(visited_bathroom and visited_kitchen and visited_livingroom and visited_parents_bedroom):
         "%(player_name)s dormiu por várias horas"
+        return
 
 
 label bedroomMorning:

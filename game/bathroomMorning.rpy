@@ -13,6 +13,8 @@ menu actionsBathroomMorning:
         jump actionsBathroomMorning
 
 label bathroomMorning:
+    $ visited_bathroom = True
+
     "E então %(player_name)s entrou no banheiro"
 
     scene bathroomMorningImage

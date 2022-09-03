@@ -1,6 +1,8 @@
 image parentsBedroomMorningImage = "images/parentsBedroomMorning.jpg"
 
 label parentsBedroomMorning:
+    $visited_parents_bedroom
+
     scene parentsBedroomMorningImage at center
     with zoomin
     
