@@ -19,10 +19,12 @@ label wakeUpMorning:
     
     show playerNormal at right:
         xalign 0.7
+        zoom 0.05
+
     with pixellate
 
     player "Já está de manhã"
 
-    call changeRoomBedroom
+    call actionsBedroomMorning
 
     return

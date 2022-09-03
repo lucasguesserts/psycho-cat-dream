@@ -4,7 +4,7 @@ init python:
 
 define player = Character(player_name)
 
-image playerNormal = "images/elaineNormal.png"
+image playerNormal = "images/player.png"
 
 label start:
     "Begin Game"
