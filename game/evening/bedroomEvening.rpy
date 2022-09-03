@@ -15,6 +15,5 @@ label bedroomEvening:
 
     menu actionsBedroomEvening:
         "Ir para o corredor":
-            "Under development"
-            # jump bathroomEvening
+            jump corridorEvening
 

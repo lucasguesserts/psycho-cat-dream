@@ -13,5 +13,4 @@ label kitchenEvening:
             jump actionsKitchenEvening
 
         "Ir para o corredor":
-            "In development"
-            jump actionsKitchenEvening
+            jump corridorEvening
