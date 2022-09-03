@@ -8,14 +8,13 @@ label corridorMorningTime:
 
     menu actionsCorridorMorning:
         "Banheiro":
-            call bathroomMorningTime
-            return
+            jump bathroomMorningTime
         
         "Quarto":
-            call wakeUpMorning
+            jump bedroomMorning
 
         "Quarto dos pais":
-            call parentsBedroomMorning
+            jump parentsBedroomMorning
         
         "Sala":
             "In development"

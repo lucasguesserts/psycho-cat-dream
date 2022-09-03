@@ -7,7 +7,7 @@ label bathroomMorningTime:
 
     menu actionsBathroomMorning:
         "Ir para o corredor":
-            call corridorMorningTime
+            jump corridorMorningTime
         
         "Tomar banho":
             player "Já tomei banho semana passada"
@@ -16,4 +16,3 @@ label bathroomMorningTime:
         "Pesar-se":
             "balança" "%(player_weight)d Kg"
             jump actionsBathroomMorning
-    return
