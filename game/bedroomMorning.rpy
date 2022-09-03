@@ -23,11 +23,11 @@ label bedroomMorning:
 
     player "Ah que preguiça!"
     
-    show playerNormal at right:
+    show playerImage at right:
         xalign 0.7
         zoom 0.05
 
-    show cat at center: 
+    show catImage at center: 
             zoom 0.025
 
     with pixellate
