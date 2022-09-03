@@ -22,6 +22,6 @@ label kitchenMorningTime:
             jump actionsKitchenMorning
 
         "Ir para o quarto":
-            call wakeUpMorning
+            call bedroomMorningTime
 
     return

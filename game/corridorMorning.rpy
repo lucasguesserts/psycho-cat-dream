@@ -12,7 +12,7 @@ label corridorMorningTime:
             return
         
         "Quarto":
-            call wakeUpMorning
+            call bedroomMorningTime
 
         "Quarto dos pais":
             "In development"

@@ -9,6 +9,13 @@ menu actionsBedroomMorning:
         player "Estou morta de fome"
         call kitchenMorningTime
         return
+    "Fazer carinho no gato":
+        "%(player_name)s faz carinho no gato"
+        jump actionsBedroomMorning
+    "Ler um livro":
+        player "Nope, Tenho 10 anos, não vou ler! Vou jogar videogame."
+        "%(player_name)s jogou videogame por alguns minutos"
+        jump actionsBedroomMorning
 
 label wakeUpMorning:
     scene bedroomMorning at center:
@@ -28,3 +35,11 @@ label wakeUpMorning:
     call actionsBedroomMorning
 
     return
+
+label bedroomMorningTime:
+    scene bedroomMorning at center:
+        zoom 0.19
+
+    "De volta ao quarto..."
+
+    call actionsBedroomMorning
