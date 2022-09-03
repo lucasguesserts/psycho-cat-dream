@@ -1,25 +1,28 @@
-menu changeRoomBedRoom:
+image bedroomMorning = "images/bedRoomMorning.jpg"
+
+menu changeRoomBedroom:
     "Ir para o Banheiro":
         player "Preciso fazer xixi"
         call corridorMorningTime
         return
     "Ir para a cozinha":
         player "Estou morta de fome"
+        call kitchenMorningTime
         return
 
 label wakeUpMorning:
-    scene bedRoomMorning at center:
+    scene bedroomMorning at center:
         zoom 0.19
     with zoomin
 
     player "Ah que preguiça!"
     
-    show elaineNormal at right:
+    show playerNormal at right:
         xalign 0.7
     with pixellate
 
     player "Já está de manhã"
 
-    call changeRoomBedRoom
+    call changeRoomBedroom
 
     return

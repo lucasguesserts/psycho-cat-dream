@@ -1,10 +1,9 @@
-﻿init python:
+init python:
     player_name = "Asha Tenebris"
 
 define player = Character(player_name)
 
-image elaineNormal = "images/elaineNormal.png"
-image bedRoomMorning = "images/bedRoomMorning.jpg"
+image playerNormal = "images/elaineNormal.png"
 
 label start:
     "Begin Game"

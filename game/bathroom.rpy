@@ -8,3 +8,4 @@ label bathroomMorningTime:
     menu sairBanheiro:
         "corredor":
             call corridorMorningTime
+    return
