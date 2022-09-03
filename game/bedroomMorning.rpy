@@ -6,7 +6,7 @@ menu actionsBedroomMorning:
         jump corridorMorningTime
     "Ir para a cozinha":
         player "Estou morta de fome"
-        jump kitchenMorningTime
+        jump kitchenMorning
 
 label bedroomMorning:
     scene bedroomMorningImage at center:

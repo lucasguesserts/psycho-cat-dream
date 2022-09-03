@@ -1,7 +1,7 @@
-image parentsBedroomMorning = "images/parentsBedroomMorning.jpg"
+image parentsBedroomMorningImage = "images/parentsBedroomMorning.jpg"
 
 label parentsBedroomMorning:
-    scene parentsBedroomMorning at center
+    scene parentsBedroomMorningImage at center
     with zoomin
     
     show fatherMorningImage:

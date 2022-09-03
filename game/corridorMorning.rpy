@@ -8,7 +8,7 @@ label corridorMorningTime:
 
     menu actionsCorridorMorning:
         "Banheiro":
-            jump bathroomMorningTime
+            jump bathroomMorning
         
         "Quarto":
             jump bedroomMorning

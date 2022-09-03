@@ -1,10 +1,10 @@
-image kitchenMorning = "images/kitchenMorning.jpg"
+image kitchenMorningImage = "images/kitchenMorning.jpg"
 
 init python:
     cookies_eaten = 0;
 
-label kitchenMorningTime:
-    scene kitchenMorning at center:
+label kitchenMorning:
+    scene kitchenMorningImage at center:
         zoom 0.19
     with pixellate
 
