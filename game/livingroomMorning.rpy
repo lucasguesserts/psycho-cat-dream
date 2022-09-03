@@ -8,7 +8,7 @@ init python:
 menu actionsLivingroomMorning:
     "Correr na Sala" if running_at_corridor and not running_at_livingroom:
         "%(player_name)s brincou de correr em volta do sofá"
-        "%(player_name)s ficou entediada"
+        player "Estou entediada"
         $running_at_livingroom = True
         jump actionsLivingroomMorning
     "Assistir TV":
@@ -28,7 +28,7 @@ label LivingRoomMorning:
         scene livingMorningImage at center:
             zoom 0.28
         with zoomin
-        show playerNormal at right:
+        show   player normal at right:
             xalign 0.7
             zoom 0.05
         with pixellate
@@ -39,7 +39,7 @@ label LivingRoomMorning:
         scene livingMorningImage at center:
             zoom 0.28
     
-        show playerNormal at right:
+        show   player normal at right:
             xalign 0.7
             zoom 0.05
 
