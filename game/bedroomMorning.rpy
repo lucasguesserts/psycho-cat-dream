@@ -1,6 +1,6 @@
 image bedroomMorning = "images/bedRoomMorning.jpg"
 
-menu changeRoomBedroom:
+menu actionsBedroomMorning:
     "Ir para o Banheiro":
         player "Preciso fazer xixi"
         call corridorMorningTime

@@ -6,7 +6,7 @@ label corridorMorningTime:
     scene corridorMorning:
         zoom 2
 
-    menu sairCorredor:
+    menu actionsCorridorMorning:
         "Banheiro":
             call bathroomMorningTime
             return
@@ -16,9 +16,9 @@ label corridorMorningTime:
 
         "Quarto dos pais":
             "In development"
-            jump sairCorredor
+            jump actionsCorridorMorning
         
         "Sala":
             "In development"
-            jump sairCorredor
+            jump actionsCorridorMorning
         
