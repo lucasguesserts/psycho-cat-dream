@@ -1,10 +1,6 @@
 image corridorMorningImage = Image("images/corridorMorning.png")
 image corridorMorningBrokenImage = Image("images/corridorMorningBroken.png")
 
-init python:
-    running_at_corridor = False
-    running_at_corridor_second_time = False
-
 menu actionsCorridorMorning:
     "Correr" if not running_at_corridor:
         $ running_at_corridor = True

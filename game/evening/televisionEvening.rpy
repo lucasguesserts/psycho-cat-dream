@@ -2,10 +2,6 @@ image tvUnsynced = "images/unsyncedTV.png"
 image tvGamutoImage = "images/GamutoTV.png"
 image tvCookieMonsterImage = "images/CookieMonsterTV.png"
 
-init python:
-    channel_watched = [False for i in range(8)]
-    see_gamuto = False
-    see_unsynced = False
 
 menu actionTvChannels:
     "Parar de assistir televisão":

@@ -1,9 +1,6 @@
 
 image kitchenEveningImage = Image("images/kitchenEvening.png")
 
-init python:
-    tried_to_steal_cookie = False
-
 menu actionsKitchenEvening:
     "Roubar biscoitos no armário":
         if(not tried_to_steal_cookie):

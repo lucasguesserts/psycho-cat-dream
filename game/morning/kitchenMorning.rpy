@@ -8,7 +8,7 @@ menu actionsKitchenMorning:
 
     "Roubar biscoitos no armário":
         call audioCookie
-        player "Que delícia!"
+        player happy "Que delícia!"
         stop sound
         player "Mas eu tô me sentindo mais pesada..."
         $ has_eaten_cookies = True

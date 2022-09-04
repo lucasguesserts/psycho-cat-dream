@@ -1,8 +1,5 @@
 image corridorEveningImage = Image("images/corridorEvening.png")
 
-init python:
-    first_time_in_corridor_evening = True
-
 menu actionsCorridorEvening:
     "Sala":
         call audioOpenDoorEvening
