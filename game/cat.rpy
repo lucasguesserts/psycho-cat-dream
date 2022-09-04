@@ -8,3 +8,5 @@ image side cat normal = im.Scale("images/catPicture.png", 250, 250)
 
 image cat happy = "images/catHappy.png"
 image side cat happy = im.Scale("images/catPicture.png", 250, 250)
+
+image cat evil = "images/evilCat.png"

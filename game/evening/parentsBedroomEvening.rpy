@@ -51,7 +51,7 @@ label fathersDeathPost:
     scene parentsBedroomEveningImage:
         zoom 0.68
     with Fade(0.0, 0.0, 2.0)
-    show cat normal at center:
+    show cat evil at center:
         xalign 0.5
         yalign 0.6
         zoom 0.025
