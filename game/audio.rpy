@@ -8,6 +8,7 @@ define audio.purr = "audio/catPurr.mp3"
 define audio.cookie = "audio/cookieEating.mp3"
 define audio.vase = "audio/breakingVase.mp3"
 define audio.faucet = "audio/faucet.mp3"
+define audio.running = "<from 2.0>audio/corridorRunning.mp3"
 
 
 label audioOpenDoorMorning:
@@ -48,4 +49,8 @@ label audioVase:
 
 label audioFaucet:
     play loopinSFX faucet
+    return
+
+label audioRunning:
+    play sound running
     return

@@ -8,16 +8,21 @@ init python:
 menu actionsCorridorMorning:
     "Correr" if not running_at_corridor:
         $ running_at_corridor = True
+        call audioRunning
         "%(player_name)s corre no corredor"
         father angry "Não corra no corredor!"
+        stop sound
         jump actionsCorridorMorning
 
     "Correr" if running_at_corridor and not running_at_corridor_second_time:
         $ running_at_corridor_second_time = True
         $ vase_is_broken = True
-        scene corridorMorningBrokenImage
+        call audioRunning
+        pause 2
         call audioVase
+        scene corridorMorningBrokenImage
         "%(player_name)s quebrou um vaso de R$100.000,00"
+        stop sound
         player sad "Meus deus, o papai vai me matar!"
         jump actionsCorridorMorning
 
