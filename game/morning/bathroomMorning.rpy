@@ -10,7 +10,7 @@ menu actionsBathroomMorning:
         jump actionsBathroomMorning
     
     "Pesar-se":
-        "balança" "%(player_weight)d Kg"
+        balanca "%(player_weight)d Kg"
         if has_eaten_cookies:
             $ has_checked_her_weight_after_getting_heavier = True
         jump actionsBathroomMorning
