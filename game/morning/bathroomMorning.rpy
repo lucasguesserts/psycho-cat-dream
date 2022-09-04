@@ -1,4 +1,4 @@
-image bathroomMorningImage = Image("images/bathroomMorning.jpg")
+image bathroomMorningImage = Image("images/bathroomMorning.png")
 
 menu actionsBathroomMorning:
     "Ir para o corredor":
@@ -19,6 +19,7 @@ label bathroomMorning:
     $ visited_bathroom = True
 
     scene bathroomMorningImage
+    with pixellate
 
     "%(player_name)s entrou no banheiro"
 

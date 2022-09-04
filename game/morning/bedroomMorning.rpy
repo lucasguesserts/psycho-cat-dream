@@ -44,18 +44,21 @@ label bedroomMorning:
 
     scene bedroomMorningImage at center:
         zoom 0.19
-
+    
     if wake_up:
         player normal "Ah que preguiça!"
-    call showCat
-
-    if not wake_up:
+        call showCat
+        show player at right:
+            xalign 0.7
+            zoom 0.05
+        with pixellate
+    else:
+        call showCat
+        show player at right:
+            xalign 0.7
+            zoom 0.05
+        with pixellate
         "%(player_name)s entrou no quarto"
-
-    show player at right:
-        xalign 0.7
-        zoom 0.05
-    with pixellate
 
     if wake_up:
         player happy "Já está de manhã"
