@@ -11,7 +11,6 @@ menu actionsBedroomEvening:
             jump corridorEvening
 
 label bedroomEvening:
-
     if wake_up:
         scene bedroomEveningImage at center:
             zoom 1.6

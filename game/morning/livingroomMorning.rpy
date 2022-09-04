@@ -24,6 +24,8 @@ menu actionsLivingroomMorning:
 
         player normal "Mãe, a TV não ta funcionando!!"
 
+        stop loopinSFX
+
         stop sound
 
         jump livingRoomMorning
@@ -42,7 +44,6 @@ label livingRoomMorning:
     if not in_livingroom:
         scene livingroomMorningImage at center
         with pixellate
-        hide TV
         
         "%(player_name)s entrou na sala"
 
