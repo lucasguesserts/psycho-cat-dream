@@ -7,8 +7,6 @@ init python:
     has_watched_tv_in_the_evening = False
     is_watching_tv_in_the_evening =False
 
-
-
 label start:
     "Begin Game"
     
