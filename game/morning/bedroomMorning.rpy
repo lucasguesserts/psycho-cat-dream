@@ -35,6 +35,7 @@ menu actionsBedroomMorning:
         jump actionsBedroomMorning
 
     "Dormir" if(visited_bathroom and visited_kitchen and visited_livingroom and visited_parents_bedroom):
+        $wake_up = True
         return
 
 label bedroomMorning:
