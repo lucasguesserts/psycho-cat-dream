@@ -8,6 +8,7 @@ menu actionsLivingRoomEvening:
         jump televisionEvening
     "Ir para corredor":
         if has_watched_tv_in_the_evening:
+            call audioOpenDoorEvening
             jump corridorEvening
         else:
             "A porta está trancada"

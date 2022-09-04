@@ -14,7 +14,7 @@ menu actionsBathroomEvening:
             player normal "Droga! A porta está trancada."
             jump actionsBathroomEvening
         else:
-            "%(player_name)s sai do banheiro"
+            call audioOpenDoorEvening
             jump corridorEvening
 
     "Abrir torneira" if(not is_sink_open):

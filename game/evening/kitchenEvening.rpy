@@ -13,6 +13,7 @@ menu actionsKitchenEvening:
         jump actionsKitchenEvening
 
     "Ir para o corredor":
+        call audioOpenDoorEvening
         jump corridorEvening
 
 label kitchenEvening:

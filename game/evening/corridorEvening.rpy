@@ -5,15 +5,20 @@ init python:
 
 menu actionsCorridorEvening:
     "Sala":
+        call audioOpenDoorEvening
         jump kitchenEvening
     "Quarto dos pais":
         if has_watched_tv_in_the_evening:
+            call audioOpenDoorEvening
             jump parentsBedroomEvening
         else:
+            call audioOpenDoorEvening
             jump bathroomEvening
     "Quarto":
+        call audioOpenDoorEvening
         jump livingRoomEvening
     "Banheiro":
+        call audioOpenDoorEvening
         jump bedroomEvening
 
 label corridorEvening:

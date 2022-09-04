@@ -4,11 +4,15 @@ menu actionsBedroomEvening:
     "Ir para o corredor":
         if wake_up:
             $wake_up = False
+            call audioOpenDoorEvening
             jump bathroomEvening
         else:
+            call audioOpenDoorEvening
             jump corridorEvening
 
 label bedroomEvening:
+    call audioBackgroundEvening
+
     if wake_up:
         scene bedroomEveningImage at center:
             zoom 0.19
