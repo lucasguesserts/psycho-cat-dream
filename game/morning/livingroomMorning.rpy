@@ -7,6 +7,9 @@ init python:
 
 menu actionsLivingroomMorning:
     "Correr na sala" if running_at_corridor and not running_at_livingroom:
+        call audioRunning
+        pause 2
+        stop sound
         "%(player_name)s brincou de correr em volta do sofá"
         player normal "Estou entediada"
         $running_at_livingroom = True
