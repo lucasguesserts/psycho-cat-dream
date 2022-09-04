@@ -51,6 +51,7 @@ define config.has_music = True
 define config.has_voice = True
 
 
+
 ## To allow the user to play a test sound on the sound or voice channel,
 ## uncomment a line below and use it to set a sample sound to play.
 
@@ -195,6 +196,9 @@ init python:
     build.documentation('*.html')
     build.documentation('*.txt')
 
+
+    #New audio channel
+    renpy.music.register_channel("loopinSFX", "sfx", True)
 
 ## A Google Play license key is required to download expansion files and perform
 ## in-app purchases. It can be found on the "Services & APIs" page of the Google

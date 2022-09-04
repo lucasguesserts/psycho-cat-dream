@@ -18,12 +18,14 @@ menu actionsBathroomEvening:
 
     "Abrir torneira" if(not is_sink_open):
         scene bathroomBloodSinkImage
+        call audioFaucet
         "Um líquido vermelho começa a fluir da torneira"
         $is_sink_open = True
         player normal "ihh"
         jump actionsBathroomEvening
         
     "Fechar torneira" if(is_sink_open and not closed_sink):
+        stop loopinSFX
         "%(player_name)s fecha a torneira, com dificuldade"
         player normal "ugh!"
         scene bathroomEveningImage

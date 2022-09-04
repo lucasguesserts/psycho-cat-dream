@@ -6,6 +6,7 @@ define audio.audioNightmare = "audio/terror.mp3"
 define audio.purr = "audio/catPurr.mp3"
 define audio.cookie = "audio/cookieEating.mp3"
 define audio.vase = "audio/breakingVase.mp3"
+define audio.faucet = "audio/faucet.mp3"
 
 
 label audioOpenDoorMorning:
@@ -38,4 +39,8 @@ label audioCookie:
 
 label audioVase:
     play sound vase
+    return
+
+label audioFaucet:
+    play loopinSFX faucet
     return
