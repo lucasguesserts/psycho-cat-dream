@@ -9,7 +9,8 @@ menu actionsKitchenMorning:
         jump actionsKitchenMorning
 
     "Roubar biscoitos no armário":
-        player "que delícia!"
+        player "Que delícia!"
+        player "Mas eu tô me sentindo mais pesada..."
         $ player_weight += 2**cookies_eaten
         $ cookies_eaten += 1
         jump actionsKitchenMorning
