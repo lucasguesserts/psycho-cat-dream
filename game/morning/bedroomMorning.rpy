@@ -45,6 +45,7 @@ label bedroomMorning:
 
     scene bedroomMorningImage at center:
         zoom 1.6
+    with fade
     
     if wake_up:
         player normal "Ah que preguiça!"
