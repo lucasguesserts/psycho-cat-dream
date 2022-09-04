@@ -1,7 +1,7 @@
 image bathroomEveningImage = Image("images/bathroomEvening.jpg")
 image bathroomMirrorImage = Image("images/bathroomMirror.png")
 image bathroomBloodyMirrorImage = Image("images/bathroomBloodyMirror.png")
-image bathroomBloodSinkImage = Image("images/bathroomEveningBloodSink.jpg")
+image bathroomBloodSinkImage = Image("images/bathroomEveningBloodSink.png")
 
 init python:
     is_sink_open = False
@@ -22,6 +22,7 @@ menu actionsBathroomEvening:
         "Um líquido vermelho começa a fluir da torneira"
         $is_sink_open = True
         player normal "ihh"
+        scene bathroomEveningImage
         jump actionsBathroomEvening
         
     "Fechar torneira" if(is_sink_open and not closed_sink):
