@@ -1,4 +1,4 @@
-image bathroomEveningImage = Image("images/bathroomEvening.jpg")
+image bathroomEveningImage = Image("images/bathroomEvening.png")
 image bathroomMirrorImage = Image("images/bathroomMirror.png")
 image bathroomBloodyMirrorImage = Image("images/bathroomBloodyMirror.png")
 image bathroomBloodSinkImage = Image("images/bathroomEveningBloodSink.jpg")

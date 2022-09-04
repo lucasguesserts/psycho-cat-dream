@@ -5,7 +5,7 @@ label parentsBedroomMorning:
 
     scene parentsBedroomMorningImage at center:
         zoom 0.68
-    with zoomin
+    with pixellate
     
     show father angry:
         xalign 0.8

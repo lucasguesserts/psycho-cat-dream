@@ -1,4 +1,4 @@
-image bathroomMorningImage = Image("images/bathroomMorning.jpg")
+image bathroomMorningImage = Image("images/bathroomMorning.png")
 
 menu actionsBathroomMorning:
     "Ir para o corredor":

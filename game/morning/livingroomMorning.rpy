@@ -36,7 +36,7 @@ label livingRoomMorning:
 
     if not in_livingroom:
         scene livingroomMorningImage at center
-        with zoomin
+        with pixellate
         hide TV
         
         "%(player_name)s entrou na sala"
