@@ -37,7 +37,8 @@ menu actionsBathroomEvening:
     "Olhar-se no espelho" if(not has_seen_herself_on_the_mirror_in_the_evening):
         $ has_seen_herself_on_the_mirror_in_the_evening = True
         "%(player_name)s olha no espelho mas, estranhamente, não vê seu reflexo"
-        show bathroomMirrorImage at top
+        show bathroomMirrorImage at top:
+            zoom 0.25
         player sad "..."
         hide bathroomMirrorImage
         scene darkRoomImage
@@ -54,7 +55,8 @@ menu actionsBathroomEvening:
 menu actionsDarkRoomBathroom:
     "Acender as luzes":
         scene bathroomEveningImage
-        show bathroomBloodyMirrorImage at top
+        show bathroomBloodyMirrorImage at top:
+            zoom 0.25
         "As palavras 'Sorria pra mim' estão escritas no espelho em vermelho"
         player scare "aaaahhhh!"
         hide bathroomBloodyMirrorImage
