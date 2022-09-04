@@ -1,5 +1,8 @@
 image livingroomEveningImage = "images/livingRoomEvening.png"
 
+init python:
+    TV_on = False
+
 menu actionsLivingRoomEvening:
     "Assistir TV":
         player normal "A televisão está estranha..."
@@ -15,8 +18,12 @@ menu actionsLivingRoomEvening:
             jump actionsLivingRoomEvening
 
 label livingRoomEvening:
-    scene livingroomEveningImage at center
-    with pixellate
+    if not TV_on:
+        scene livingroomEveningImage at center
+        with pixellate
+    else:
+        scene livingroomEveningTVImage at center
+        with pixellate
 
     call audioStaticTV
     if(is_watching_tv_in_the_evening):
