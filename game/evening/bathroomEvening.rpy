@@ -5,7 +5,6 @@ image bathroomBloodSinkImage = Image("images/bathroomEveningBloodSink.jpg")
 
 init python:
     is_sink_open = False
-    looked_on_mirror = False
     closed_sink = False
 
 menu actionsBathroomEvening:
@@ -32,22 +31,21 @@ menu actionsBathroomEvening:
         $player_courage += 100
         jump actionsBathroomEvening
         
-    "olhar no espelho" if(not looked_on_mirror):
-        $looked_on_mirror = True
-
+    "Olhar-se no espelho" if(not has_seen_herself_on_the_mirror_in_the_evening):
+        $ has_seen_herself_on_the_mirror_in_the_evening = True
         "%(player_name)s olha no espelho mas, estranhamente, não vê seu reflexo"
         show bathroomMirrorImage at top
-        player sad"..."
+        player sad "..."
         hide bathroomMirrorImage
         scene darkRoomImage
         "As luzes se apagam"
         player sad "uh?"
-
         jump actionsDarkRoomBathroom
         
     "Pesar-se":
         "Balança" "666 kg"
         player sad "que estranho..."
+        $ has_checked_her_weight_in_the_evening = True
         jump actionsBathroomEvening
 
 menu actionsDarkRoomBathroom:
