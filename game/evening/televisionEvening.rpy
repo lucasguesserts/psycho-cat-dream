@@ -11,6 +11,7 @@ menu actionTvChannels:
     "Parar de assistir televisão":
         player sad "Acho que já vi TV demais por hoje..."
         $ has_watched_all_channels_in_the_evening = all(channel_watched)
+        $TV_on = False
         jump livingRoomEvening
     "Channel 0":
         $ channel_watched[0] = True
@@ -58,8 +59,6 @@ label televisionGamuto:
     jump actionTvChannels
 
 label televisionCookieMonster:
-    # TODO: jumpscare
-    "TÁ FALTANDO UM JUMP SCARE AQUI!!!!"
     scene tvCookieMonsterImage at center
     with pixellate
     player scare "aaaahhh!"

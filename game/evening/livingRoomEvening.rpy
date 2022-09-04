@@ -1,7 +1,8 @@
 image livingroomEveningImage = "images/livingRoomEvening.png"
+image livingroomTVEveningImage = "images/livingRoomTVEvening.png"
 
 init python:
-    TV_on = False
+    TV_on = True
 
 menu actionsLivingRoomEvening:
     "Assistir TV":
@@ -19,13 +20,13 @@ menu actionsLivingRoomEvening:
 
 label livingRoomEvening:
     if not TV_on:
-        scene livingroomEveningImage at center
-        with pixellate
-    else:
         scene livingroomEveningTVImage at center
         with pixellate
+        call audioStaticTV
+    else:
+        scene livingroomTVEveningImage at center
+        with pixellate
 
-    call audioStaticTV
     if(is_watching_tv_in_the_evening):
         $is_watching_tv_in_the_evening = False
     else:
