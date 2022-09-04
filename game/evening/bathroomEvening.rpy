@@ -47,7 +47,7 @@ menu actionsBathroomEvening:
         jump actionsDarkRoomBathroom
         
     "Pesar-se":
-        "Balança" "666 kg"
+        balanca "666 kg"
         player sad "que estranho..."
         $ has_checked_her_weight_in_the_evening = True
         jump actionsBathroomEvening
