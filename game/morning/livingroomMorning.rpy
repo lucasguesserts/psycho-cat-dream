@@ -6,7 +6,7 @@ init python:
     in_livingroom = False
 
 menu actionsLivingroomMorning:
-    "Correr na Sala" if running_at_corridor and not running_at_livingroom:
+    "Correr na sala" if running_at_corridor and not running_at_livingroom:
         "%(player_name)s brincou de correr em volta do sofá"
         player normal "Estou entediada"
         $running_at_livingroom = True
@@ -26,7 +26,7 @@ menu actionsLivingroomMorning:
         $in_livingroom = False
         call audioOpenDoorMorning
         jump corridorMorning
-    "Ir para Cozinha":
+    "Ir para cozinha":
         $in_livingroom = False
         call audioOpenDoorMorning
         jump kitchenMorning

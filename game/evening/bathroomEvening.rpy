@@ -59,6 +59,7 @@ menu actionsDarkRoomBathroom:
 
 label bathroomEvening:
     scene bathroomEveningImage
+    with pixellate
 
     "%(player_name)s entrou no banheiro"
 
