@@ -12,7 +12,7 @@ menu actionsLivingRoomEvening:
         jump televisionEvening
     "Ir para corredor":
         $TV_on = True
-        stop sound
+        stop loopinSFX
         if has_watched_tv_in_the_evening:
             call audioOpenDoorEvening
             jump corridorEvening

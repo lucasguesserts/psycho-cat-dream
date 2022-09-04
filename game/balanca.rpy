@@ -1,0 +1,1 @@
+define balanca = Character("Balança", color="#ededed")
