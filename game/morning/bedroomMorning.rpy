@@ -33,8 +33,7 @@ menu actionsBedroomMorning:
         hide videoGameImage
         jump actionsBedroomMorning
 
-    "Dormir" if(visited_bathroom and visited_kitchen and visited_livingroom and visited_parents_bedroom):
-        "%(player_name)s dormiu por várias horas"
+    "Dormir":# if(visited_bathroom and visited_kitchen and visited_livingroom and visited_parents_bedroom):
         return
 
 label bedroomMorning:
@@ -42,7 +41,6 @@ label bedroomMorning:
 
     scene bedroomMorningImage at center:
         zoom 0.19
-    with zoomin
 
     if wake_up:
         player normal "Ah que preguiça!"
