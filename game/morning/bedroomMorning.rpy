@@ -23,7 +23,7 @@ label bedroomMorning:
 
     player normal "Ah que preguiça!"
     
-    show player normal at right:
+    show player at right:
         xalign 0.7
         zoom 0.05
 
@@ -32,7 +32,7 @@ label bedroomMorning:
 
     with pixellate
 
-    player "Já está de manhã"
+    player happy "Já está de manhã"
 
     jump actionsBedroomMorning
 
