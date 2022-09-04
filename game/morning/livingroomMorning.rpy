@@ -15,17 +15,12 @@ menu actionsLivingroomMorning:
         player normal "Quero ver um desenho"
         scene TV at center
         with pixellate
-        
-        hide player
-        hide livingroomMorningImage
-        
-        scene TV at center:
-            zoom 1.3
         call audioStaticTV
 
+        hide livingroomMorningImage
+
         player normal "Mãe, a TV não ta funcionando!!"
-        hide TV
-        with pixellate
+
         stop sound
 
         jump livingRoomMorning
@@ -53,9 +48,5 @@ label livingRoomMorning:
         scene livingroomMorningImage at center
         with pixellate
         hide TV
-
-        show player normal at right:
-            xalign 0.7
-            zoom 0.05
 
     jump actionsLivingroomMorning
