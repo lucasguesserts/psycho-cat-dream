@@ -47,6 +47,9 @@ label bedroomMorning:
         player normal "Ah que preguiça!"
     call showCat
 
+    if not wake_up:
+        "%(player_name)s entrou no quarto"
+
     show player at right:
         xalign 0.7
         zoom 0.05
