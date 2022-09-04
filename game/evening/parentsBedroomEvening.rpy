@@ -4,6 +4,7 @@ image darkRoomImage = Image("darkRoom.jpg")
 label parentsBedroomEvening:
     scene parentsBedroomEveningImage:
         zoom 0.68
+    with pixellate
     call courageousEndingMechanics
     call fathersDeathPrologue
     call fathersDeath
