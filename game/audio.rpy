@@ -27,7 +27,7 @@ label audioBackgroundEvening:
     return
 
 label audioStaticTV:
-    play sound staticTV volume 0.1
+    play loopinSFX staticTV volume 0.1
     return
 
 label audioNightmare:

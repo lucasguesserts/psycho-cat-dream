@@ -12,6 +12,7 @@ menu actionTvChannels:
         player sad "Acho que já vi TV demais por hoje..."
         $ has_watched_all_channels_in_the_evening = all(channel_watched)
         $TV_on = False
+        stop loopinSFX
         jump livingRoomEvening
     "Channel 0":
         $ channel_watched[0] = True
@@ -39,6 +40,10 @@ menu actionTvChannels:
         jump televisionGamuto
 
 label televisionEvening:
+    if not TV_on:
+        $TV_on = True
+        call audioStaticTV
+
     scene tvUnsynced at center
     with pixellate
     if not see_unsynced:

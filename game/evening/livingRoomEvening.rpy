@@ -11,6 +11,8 @@ menu actionsLivingRoomEvening:
         $ is_watching_tv_in_the_evening = True
         jump televisionEvening
     "Ir para corredor":
+        $TV_on = True
+        stop sound
         if has_watched_tv_in_the_evening:
             call audioOpenDoorEvening
             jump corridorEvening
@@ -20,12 +22,12 @@ menu actionsLivingRoomEvening:
 
 label livingRoomEvening:
     if not TV_on:
-        scene livingroomEveningTVImage at center
+        scene livingroomEveningImage at center
         with pixellate
-        call audioStaticTV
     else:
         scene livingroomTVEveningImage at center
         with pixellate
+        call audioStaticTV
 
     if(is_watching_tv_in_the_evening):
         $is_watching_tv_in_the_evening = False
