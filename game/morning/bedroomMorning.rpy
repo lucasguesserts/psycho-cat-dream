@@ -39,6 +39,8 @@ menu actionsBedroomMorning:
 label bedroomMorning:
     $cat_happy = False
 
+    call audioBackgroundMorning
+
     scene bedroomMorningImage at center:
         zoom 0.19
 
