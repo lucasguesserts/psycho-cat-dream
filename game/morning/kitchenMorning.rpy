@@ -1,8 +1,5 @@
 image kitchenMorningImage = "images/kitchenMorning.png"
 
-init python:
-    cookies_eaten = 0;
-
 menu actionsKitchenMorning:
     "Comer maçã":
         player "A maçã sumiu!"

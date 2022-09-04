@@ -3,10 +3,6 @@ image bathroomMirrorImage = Image("images/bathroomMirror.png")
 image bathroomBloodyMirrorImage = Image("images/bathroomBloodyMirror.png")
 image bathroomBloodSinkImage = Image("images/bathroomEveningBloodSink.png")
 
-init python:
-    is_sink_open = False
-    closed_sink = False
-
 menu actionsBathroomEvening:
     "Ir para o quarto":
         if(not closed_sink):
@@ -31,7 +27,6 @@ menu actionsBathroomEvening:
         player normal "ugh!"
         scene bathroomEveningImage
         $closed_sink = True
-        $player_courage += 100
         jump actionsBathroomEvening
         
     "Olhar-se no espelho" if(not has_seen_herself_on_the_mirror_in_the_evening):
