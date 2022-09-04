@@ -16,6 +16,7 @@ menu actionsCorridorMorning:
         $ running_at_corridor_second_time = True
         $ vase_is_broken = True
         scene corridorMorningBrokenImage
+        call audioVase
         "%(player_name)s quebrou um vaso de R$100.000,00"
         player sad "Meus deus, o papai vai me matar!"
         jump actionsCorridorMorning
