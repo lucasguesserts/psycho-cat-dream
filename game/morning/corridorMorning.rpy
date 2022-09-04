@@ -9,7 +9,7 @@ menu actionsCorridorMorning:
     "Correr" if not running_at_corridor:
         $ running_at_corridor = True
         "%(player_name)s corre no corredor"
-        fatherMorning "Não corra no corredor!"
+        father angry "Não corra no corredor!"
         jump actionsCorridorMorning
 
     "Correr" if running_at_corridor and not running_at_corridor_second_time:
@@ -17,6 +17,7 @@ menu actionsCorridorMorning:
         $ vase_is_broken = True
         scene corridorMorningBrokenImage
         "%(player_name)s quebrou um vaso de R$100.000,00"
+        player sad "Meus deus, o papai vai me matar!"
         jump actionsCorridorMorning
 
     "Banheiro":
