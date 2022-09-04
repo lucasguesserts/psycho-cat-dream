@@ -1,4 +1,4 @@
-image livingMorningImage = "images/livingroomMorning.jpg"
+image livingroomMorningImage = "images/livingroomMorning.png"
 image TV = "images/TV.png"
 
 init python:
@@ -14,7 +14,7 @@ menu actionsLivingroomMorning:
     "Assistir TV":
         player normal "Quero ver um desenho"
         hide player
-        hide livingMorningImage
+        hide livingroomMorningImage
         
         scene TV at center:
             zoom 1.3
@@ -35,15 +35,13 @@ label livingRoomMorning:
     $visited_livingroom = True
 
     if not in_livingroom:
-        scene livingMorningImage at center:
-            zoom 0.28
+        scene livingroomMorningImage at center
         with zoomin
         "%(player_name)s entrou na sala"
 
         $in_livingroom = True
     else:
-        scene livingMorningImage at center:
-            zoom 0.28
+        scene livingroomMorningImage at center
     
         show player normal at right:
             xalign 0.7

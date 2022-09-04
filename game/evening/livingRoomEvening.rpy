@@ -1,5 +1,4 @@
-image livingRoomEveningImage = "images/livingRoomEvening.jpg"
-
+image livingroomEveningImage = "images/livingRoomEvening.png"
 
 menu actionsLivingRoomEvening:
     "Assistir TV" if not has_watched_tv_in_the_evening:
@@ -15,11 +14,9 @@ menu actionsLivingRoomEvening:
             jump actionsLivingRoomEvening
 
 label livingRoomEvening:
-    scene livingRoomEveningImage at center:
-        zoom 0.28
+    scene livingroomEveningImage at center
     if(is_watching_tv_in_the_evening):
         $is_watching_tv_in_the_evening = False
     else:
         "%(player_name)s entrou na sala"
-
     jump actionsLivingRoomEvening
