@@ -6,14 +6,14 @@ label parentsBedroomMorning:
     scene parentsBedroomMorningImage at center
     with zoomin
     
-    show fatherMorningImage:
+    show father angry:
         xalign 0.8
         yalign 0.7
-        zoom 0.4
+        zoom 0.04
 
     with pixellate
 
-    fatherMorning "Aqui não é o seu quarto."
-    fatherMorning "Vá brincar em outro local."
+    father angry "Aqui não é o seu quarto."
+    father angry "Vá brincar em outro local."
 
     jump corridorMorning
