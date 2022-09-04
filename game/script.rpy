@@ -7,6 +7,15 @@ init python:
     has_watched_tv_in_the_evening = False
     is_watching_tv_in_the_evening = False
 
+    # courage mechanics
+    has_eaten_the_apple_in_the_kitchen_in_the_morning = False
+    has_eaten_cookies = False
+    has_checked_her_weight_after_getting_heavier = False
+    has_checked_her_weight_in_the_evening = False
+    has_seen_herself_on_the_mirror_in_the_evening = False
+    has_watched_all_channels_in_the_evening = False
+    is_courageus_enough = False
+
 label start:
     "Begin Game"
     
