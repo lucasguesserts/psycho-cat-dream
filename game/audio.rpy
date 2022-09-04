@@ -1,3 +1,4 @@
+define audio.backgroundMorning = "<loop 0.0>audio/morningBackground.mp3"
 define audio.backgroundEvening = "<loop 0.0>audio/eveningBackground.mp3"
 define audio.doorOpeningEvening = "audio/doorOpeningEvening.mp3"
 define audio.doorOpeningMorning = "audio/doorOpeningMorning.mp3"
@@ -15,6 +16,10 @@ label audioOpenDoorMorning:
 
 label audioOpenDoorEvening:
     play sound doorOpeningEvening
+    return
+
+label audioBackgroundMorning:
+    play music audio.backgroundMorning fadein 1.0
     return
 
 label audioBackgroundEvening:

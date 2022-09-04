@@ -22,8 +22,6 @@ label initVariables:
 label start:
 
     call initVariables
-
-    "Begin Game"
     
     call morning
     
