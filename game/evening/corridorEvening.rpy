@@ -17,8 +17,7 @@ menu actionsCorridorEvening:
         jump bedroomEvening
 
 label corridorEvening:
-    scene corridorEveningImage:
-        zoom 2
+    scene corridorEveningImage
 
     if vase_is_broken and first_time_in_corridor_evening:
         player normal "Eu não acredito!"
