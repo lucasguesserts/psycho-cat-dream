@@ -3,7 +3,7 @@ init python:
     player_weight = 30
     player_courage = 0 #Coragem é utilizada para matar o gato. 100 pontos são necessários para vencer
 
-define player = Character(player_name, image = "player")
+define player = Character(player_name, image = "player", color="#ededed")
 
 image player normal = "images/player.png"
 image player happy = "images/player.png"
