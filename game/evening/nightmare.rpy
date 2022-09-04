@@ -1,6 +1,7 @@
 
 label nightmare:
     pause 0.4
+    call audioNightmare
     show evilCat1
     with Fade(0.1, 0.0, 0.1, color = "#700")
     show evilCat2
