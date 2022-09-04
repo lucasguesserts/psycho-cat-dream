@@ -19,6 +19,7 @@ label bathroomMorning:
     $ visited_bathroom = True
 
     scene bathroomMorningImage
+    with pixellate
 
     "%(player_name)s entrou no banheiro"
 
