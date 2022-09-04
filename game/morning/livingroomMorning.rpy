@@ -25,8 +25,10 @@ menu actionsLivingroomMorning:
 
         jump livingRoomMorning
     "Ir para corredor":
+        $in_livingroom = False
         jump corridorMorning
     "Ir para Cozinha":
+        $in_livingroom = False
         jump kitchenMorning
 
 label livingRoomMorning:
@@ -36,12 +38,8 @@ label livingRoomMorning:
         scene livingMorningImage at center:
             zoom 0.28
         with zoomin
-        show  player normal at right:
-            xalign 0.7
-            zoom 0.05
-        with pixellate
-
         "%(player_name)s entrou na sala"
+
         $in_livingroom = True
     else:
         scene livingMorningImage at center:
@@ -51,6 +49,4 @@ label livingRoomMorning:
             xalign 0.7
             zoom 0.05
 
-    call actionsLivingroomMorning
-
-    return
+    jump actionsLivingroomMorning
