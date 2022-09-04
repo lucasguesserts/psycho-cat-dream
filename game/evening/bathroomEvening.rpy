@@ -1,5 +1,6 @@
 image bathroomEveningImage = Image("images/bathroomEvening.jpg")
 image bathroomMirrorImage = Image("images/bathroomMirror.png")
+image bathroomBloodyMirrorImage = Image("images/bathroomBloodyMirror.png")
 
 init python:
     is_sink_open = False
@@ -39,19 +40,24 @@ label bathroomEvening:
         
         "olhar no espelho" if(not looked_on_mirror):
             $looked_on_mirror = True
-            "%(player_name)s vê uma versão distorcida de si mesma no espelho"
-            #Mostrar espelho com reflexo bizarro
+            "%(player_name)s olha no espelho mas, estranhamente, não vê seu reflexo"
+            
             show bathroomMirrorImage at top
-            player normal"..."
+            player sad"..."
+            hide bathroomMirrorImage
+
             scene darkRoomImage
             "As luzes se apagam"
-            player normal "uh?"
+            player sad "uh?"
             menu actionsdarkRoomBathroom:
                 "Acender as luzes":
                     scene bathroomEveningImage
                     "As palavras 'Sorria pra mim' estão escritas no espelho em vermelho"
-                    #Mostrar espelho escrito sorria pra mim
-                    player normal "aaaahhhh!"
+
+                    show bathroomBloodyMirrorImage at top
+                    player scare "aaaahhhh!"
+                    hide bathroomBloodyMirrorImage
+
                     jump actionsBathroomEvening
         
         "Pesar-se":
