@@ -23,7 +23,7 @@ menu actionsCorridorEvening:
 
 label corridorEvening:
     scene corridorEveningImage at center:
-        zoom 2.5
+        zoom 0.625
     with pixellate
     
     "%(player_name)s entrou no corredor"
