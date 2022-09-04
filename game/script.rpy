@@ -14,13 +14,12 @@ init python:
     has_checked_her_weight_in_the_evening = False
     has_seen_herself_on_the_mirror_in_the_evening = False
     has_watched_all_channels_in_the_evening = False
-
-
+    is_courageus_enough = False
 
 label start:
     "Begin Game"
     
-    # call morning
+    call morning
     
     call evening
 
