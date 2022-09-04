@@ -20,7 +20,8 @@ menu actionsCorridorMorning:
         call audioRunning
         pause 2
         call audioVase
-        scene corridorMorningBrokenImage
+        scene corridorMorningBrokenImage at center:
+            zoom 2.5
         "%(player_name)s quebrou um vaso de R$100.000,00"
         stop sound
         player sad "Meus deus, o papai vai me matar!"
@@ -44,10 +45,12 @@ menu actionsCorridorMorning:
 
 label corridorMorning:
     if not vase_is_broken:
-        scene corridorMorningImage
+        scene corridorMorningImage at center:
+            zoom 2.5
         with pixellate
     else:
-        scene corridorMorningBrokenImage
+        scene corridorMorningBrokenImage at center:
+            zoom 2.5
         with pixellate
         
     "E então %(player_name)s entrou no corredor"

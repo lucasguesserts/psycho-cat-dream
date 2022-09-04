@@ -22,7 +22,8 @@ menu actionsCorridorEvening:
         jump bedroomEvening
 
 label corridorEvening:
-    scene corridorEveningImage
+    scene corridorEveningImage at center:
+        zoom 2.5
     with pixellate
     
     "%(player_name)s entrou no corredor"
