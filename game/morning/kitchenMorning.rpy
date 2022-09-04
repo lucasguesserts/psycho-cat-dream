@@ -27,8 +27,8 @@ menu actionsKitchenMorning:
 label kitchenMorning:
     $visited_kitchen = True
 
-    scene kitchenMorningImage at center:
-        zoom 0.19
+    scene kitchenMorningImage at truecenter:
+        zoom 2.9
     with pixellate
 
     "%(player_name)s entrou na cozinha"

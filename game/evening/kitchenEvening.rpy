@@ -1,5 +1,5 @@
 
-image kitchenEveningImage = Image("images/kitchenEvening.jpg")
+image kitchenEveningImage = Image("images/kitchenEvening.png")
 
 init python:
     tried_to_steal_cookie = False
@@ -18,7 +18,7 @@ menu actionsKitchenEvening:
 
 label kitchenEvening:
     scene kitchenEveningImage at center:
-        zoom 0.19
+        zoom 2.9
     with pixellate
 
     "%(player_name)s entrou na cozinha"
