@@ -2,7 +2,6 @@ image bedroomMorningImage = "images/bedRoomMorning.jpg"
 image videoGameImage = "images/gameConsole.png"
 
 init python:
-    wake_up = True
     cat_happy = False
 
 label showCat:
@@ -36,7 +35,6 @@ menu actionsBedroomMorning:
         jump actionsBedroomMorning
 
     "Dormir" if(visited_bathroom and visited_kitchen and visited_livingroom and visited_parents_bedroom):
-        $wake_up = True
         return
 
 label bedroomMorning:
