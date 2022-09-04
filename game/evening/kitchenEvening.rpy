@@ -18,7 +18,7 @@ menu actionsKitchenEvening:
 
 label kitchenEvening:
     scene kitchenEveningImage at center:
-        zoom 2.9
+        zoom 0.72
     with pixellate
 
     "%(player_name)s entrou na cozinha"

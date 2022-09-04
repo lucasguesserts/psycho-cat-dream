@@ -22,7 +22,7 @@ label initVariables:
 label start:
 
     call initVariables
-    
+
     call morning
     
     call evening

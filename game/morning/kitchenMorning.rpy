@@ -1,4 +1,4 @@
-image kitchenMorningImage = "images/kitchenMorning.jpg"
+image kitchenMorningImage = "images/kitchenMorning.png"
 
 init python:
     cookies_eaten = 0;
@@ -28,7 +28,7 @@ label kitchenMorning:
     $visited_kitchen = True
 
     scene kitchenMorningImage at truecenter:
-        zoom 2.9
+        zoom 0.72
     with pixellate
 
     "%(player_name)s entrou na cozinha"
