@@ -6,10 +6,13 @@ init python:
 menu actionsKitchenMorning:
     "Comer maçã":
         player "A maçã sumiu!"
+        $ has_eaten_the_apple_in_the_kitchen_in_the_morning = True
         jump actionsKitchenMorning
 
     "Roubar biscoitos no armário":
-        player "que delícia!"
+        player "Que delícia!"
+        player "Mas eu tô me sentindo mais pesada..."
+        $ has_eaten_cookies = True
         $ player_weight += 2**cookies_eaten
         $ cookies_eaten += 1
         jump actionsKitchenMorning

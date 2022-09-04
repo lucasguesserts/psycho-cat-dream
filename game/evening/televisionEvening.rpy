@@ -7,12 +7,9 @@ init python:
 
 menu actionTvChannels:
     "Parar de assistir televisão":
-        if all(channel_watched):
-            player sad "Acho que já vi TV demais por hoje..."
-            jump livingRoomEvening
-        else:
-            "Preciso assistir a todos os canais, preciso saber o que está acontecendo"
-            jump actionTvChannels
+        player sad "Acho que já vi TV demais por hoje..."
+        $ has_watched_all_channels_in_the_evening = all(channel_watched)
+        jump livingRoomEvening
     "Channel 0":
         $ channel_watched[0] = True
         player sad "Quem é esse bicho estranho?"
@@ -24,7 +21,7 @@ menu actionTvChannels:
         $ channel_watched[2] = True
         player sad "Está em todos os canais?!"
         jump televisionGamuto
-    "Channel 3":
+    "Channel 3" if not channel_watched[3]:
         $ channel_watched[3] = True
         jump televisionCookieMonster
     "Channel 4":
@@ -44,6 +41,7 @@ label televisionEvening:
     scene tvEveningImage at center:
         zoom 1.3
     with pixellate
+    player sad "Talvez seja melhor eu assistir a todos os canais para ver se descubro o que está acontecendo..."
     jump actionTvChannels
 
 label televisionGamuto:

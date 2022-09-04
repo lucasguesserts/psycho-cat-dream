@@ -1,7 +1,7 @@
 image livingroomEveningImage = "images/livingRoomEvening.png"
 
 menu actionsLivingRoomEvening:
-    "Assistir TV" if not has_watched_tv_in_the_evening:
+    "Assistir TV":
         player normal "A televisão está estranha..."
         $ has_watched_tv_in_the_evening = True
         $ is_watching_tv_in_the_evening = True
