@@ -11,13 +11,13 @@ menu actionsBedroomEvening:
             jump corridorEvening
 
 label bedroomEvening:
-    call audioBackgroundEvening
 
     if wake_up:
         scene bedroomEveningImage at center:
             zoom 0.19
         with pixellate
         call nightmare
+        call audioBackgroundEvening
         "%(player_name)s dormiu por várias horas"
     else:
         scene bedroomEveningImage at center:

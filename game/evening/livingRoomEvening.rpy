@@ -16,6 +16,7 @@ menu actionsLivingRoomEvening:
 
 label livingRoomEvening:
     scene livingroomEveningImage at center
+    call audioStaticTV
     if(is_watching_tv_in_the_evening):
         $is_watching_tv_in_the_evening = False
     else:

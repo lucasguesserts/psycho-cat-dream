@@ -21,4 +21,5 @@ label parentsBedroomMorning:
     father angry "Vá brincar em outro local."
     player sad "Ta bom, papai."
 
+    call audioOpenDoorMorning
     jump corridorMorning

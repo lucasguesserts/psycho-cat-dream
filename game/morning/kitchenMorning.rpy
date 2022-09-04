@@ -15,6 +15,7 @@ menu actionsKitchenMorning:
         jump actionsKitchenMorning
 
     "Ir para a sala":
+        call audioOpenDoorMorning
         jump livingRoomMorning
 
 label kitchenMorning:

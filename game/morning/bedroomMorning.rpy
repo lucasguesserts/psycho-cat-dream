@@ -16,6 +16,7 @@ label showCat:
 
 menu actionsBedroomMorning:
     "Ir para o corredor":
+        call audioOpenDoorMorning
         jump corridorMorning
     "Fazer carinho no gato":
         "%(player_name)s faz carinho no gato"

@@ -21,15 +21,19 @@ menu actionsCorridorMorning:
         jump actionsCorridorMorning
 
     "Banheiro":
+        call audioOpenDoorMorning
         jump bathroomMorning
     
     "Quarto":
+        call audioOpenDoorMorning
         jump bedroomMorning
 
     "Quarto dos pais":
+        call audioOpenDoorMorning
         jump parentsBedroomMorning
     
     "Sala":
+        call audioOpenDoorMorning
         jump livingRoomMorning
 
 label corridorMorning:

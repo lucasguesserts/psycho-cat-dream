@@ -26,9 +26,11 @@ menu actionsLivingroomMorning:
         jump livingRoomMorning
     "Ir para corredor":
         $in_livingroom = False
+        call audioOpenDoorMorning
         jump corridorMorning
     "Ir para Cozinha":
         $in_livingroom = False
+        call audioOpenDoorMorning
         jump kitchenMorning
 
 label livingRoomMorning:

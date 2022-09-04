@@ -10,7 +10,7 @@ init python:
 label start:
     "Begin Game"
     
-    call morning
+    #call morning
     
     call evening
 

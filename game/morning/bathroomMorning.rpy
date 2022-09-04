@@ -2,6 +2,7 @@ image bathroomMorningImage = Image("images/bathroomMorning.jpg")
 
 menu actionsBathroomMorning:
     "Ir para o corredor":
+        call audioOpenDoorMorning
         jump corridorMorning
     
     "Tomar banho":
