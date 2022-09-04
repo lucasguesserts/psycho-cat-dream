@@ -1,21 +1,34 @@
 image bedroomEveningImage = "images/bedroomEvening.jpg"
 
+menu actionsBedroomEvening:
+    "Ir para o corredor":
+        if wake_up:
+            $wake_up = False
+            jump bathroomEvening
+        else:
+            jump corridorEvening
+
 label bedroomEvening:
-    scene bedroomEveningImage at center:
-        zoom 0.19
-    with pixellate
-    "%(player_name)s dormiu por várias horas"
+    if wake_up:
+        scene bedroomEveningImage at center:
+            zoom 0.19
+        with pixellate
+        "%(player_name)s dormiu por várias horas"
+    else:
+        scene bedroomEveningImage at center:
+            zoom 0.19
+        "%(player_name)s entrou no quarto"
 
     show player normal at right:
         xalign 0.7
         zoom 0.05
     with pixellate
-
-    player normal "Cadê o meu gato?"
-    player normal "Esse quarto está muito estranho!"
-    player normal "Eu quero meu pai!"
-
-    menu actionsBedroomEvening:
-        "Ir para o corredor":
-            jump corridorEvening
-
+    
+    if wake_up:
+        player normal "Cadê o meu gato?"
+        player scare "Esse quarto está muito estranho!"
+        player scare "Eu quero meu pai!"
+    else:
+        player scare "Meu deus, como vim parar no meu quarto? Eu queria ir pro banheiro!"
+                
+    jump actionsBedroomEvening
