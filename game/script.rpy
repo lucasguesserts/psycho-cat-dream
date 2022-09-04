@@ -5,7 +5,7 @@ init python:
     visited_livingroom = False
     vase_is_broken = False
     has_watched_tv_in_the_evening = False
-    is_watching_tv_in_the_evening =False
+    is_watching_tv_in_the_evening = False
 
 label start:
     "Begin Game"

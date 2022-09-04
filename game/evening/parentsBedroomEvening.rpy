@@ -7,25 +7,31 @@ menu actionsParentsBedroomEvening:
         jump actionsParentsBedroomEvening
 
 label parentsBedroomEvening:
-    scene parentsBedroomEveningImage
+    scene parentsBedroomEveningImage:
+        zoom 0.68
+    with zoomin
 
     show cat normal at center:
         zoom 0.025
 
-    show fatherMorningImage:
+    show father angry:
         xalign 0.8
         yalign 0.7
-        zoom 0.4
+        zoom 0.04
+    with pixellate
 
     player normal "Papai, estou com medo!"
 
     scene darkRoomImage
 
     hide cat normal
-    hide fatherMorningImage
+    hide father
     "As luzes se apagaram"
 
-    scene parentsBedroomEveningImage
+    scene parentsBedroomEveningImage:
+        zoom 0.68
+    with pixellate
+
     hide darkRoomImage
     
     show fatherEveningDeadImage:

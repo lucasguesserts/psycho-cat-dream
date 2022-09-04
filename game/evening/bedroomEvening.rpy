@@ -17,6 +17,7 @@ label bedroomEvening:
         scene bedroomEveningImage at center:
             zoom 0.19
         with pixellate
+        call nightmare
         "%(player_name)s dormiu por várias horas"
     else:
         scene bedroomEveningImage at center:
@@ -29,6 +30,7 @@ label bedroomEvening:
     with pixellate
     
     if wake_up:
+        player scare "Que pesadelo terrível!?!"
         player normal "Cadê o meu gato?"
         player scare "Esse quarto está muito estranho!"
         player scare "Eu quero meu pai!"
