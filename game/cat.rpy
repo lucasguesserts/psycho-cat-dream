@@ -1,7 +1,7 @@
 init python:
     cat_name = "Bartolomeu"
 
-define cat = Character(cat_name, image = "cat")
+define cat = Character(cat_name, image = "cat", color="#ededed")
 
 image cat normal = "images/cat.png"
 image side cat normal = im.Scale("images/catPicture.png", 250, 250)
