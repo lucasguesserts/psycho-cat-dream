@@ -1,4 +1,4 @@
-image bedroomEveningImage = "images/bedroomEvening.jpg"
+image bedroomEveningImage = "images/bedroomEvening.png"
 
 menu actionsBedroomEvening:
     "Ir para o corredor":
@@ -14,14 +14,14 @@ label bedroomEvening:
 
     if wake_up:
         scene bedroomEveningImage at center:
-            zoom 0.19
+            zoom 1.6
         with pixellate
         call nightmare
         call audioBackgroundEvening
         "%(player_name)s dormiu por várias horas"
     else:
         scene bedroomEveningImage at center:
-            zoom 0.19
+            zoom 1.6
         "%(player_name)s entrou no quarto"
 
     show player normal at right:

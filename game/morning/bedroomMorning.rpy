@@ -1,4 +1,4 @@
-image bedroomMorningImage = "images/bedRoomMorning.jpg"
+image bedroomMorningImage = "images/bedRoomMorning.png"
 image videoGameImage = "images/gameConsole.png"
 
 init python:
@@ -43,7 +43,7 @@ label bedroomMorning:
     call audioBackgroundMorning
 
     scene bedroomMorningImage at center:
-        zoom 0.19
+        zoom 1.6
     
     if wake_up:
         player normal "Ah que preguiça!"
