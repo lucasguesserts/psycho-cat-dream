@@ -4,6 +4,7 @@ define audio.doorOpeningMorning = "audio/doorOpeningMorning.mp3"
 define audio.staticTV = "audio/staticTVEvening.mp3"
 define audio.audioNightmare = "audio/terror.mp3"
 define audio.purr = "audio/catPurr.mp3"
+define audio.cookie = "audio/cookieEating.mp3"
 
 label audioOpenDoorMorning:
     play sound doorOpeningMorning
@@ -27,4 +28,8 @@ label audioNightmare:
 
 label audioPurr:
     play sound purr
+    return
+
+label audioCookie:
+    play sound cookie
     return

@@ -10,12 +10,15 @@ menu actionsKitchenMorning:
         jump actionsKitchenMorning
 
     "Roubar biscoitos no armário":
+        call audioCookie
         player "Que delícia!"
+        stop sound
         player "Mas eu tô me sentindo mais pesada..."
         $ has_eaten_cookies = True
         $ player_weight += 2**cookies_eaten
         $ cookies_eaten += 1
         jump actionsKitchenMorning
+        
 
     "Ir para a sala":
         call audioOpenDoorMorning
