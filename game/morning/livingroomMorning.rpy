@@ -18,10 +18,12 @@ menu actionsLivingroomMorning:
         
         scene TV at center:
             zoom 1.3
+        call audioStaticTV
 
         player normal "Mãe, a TV não ta funcionando!!"
         hide TV
         with pixellate
+        stop sound
 
         jump livingRoomMorning
     "Ir para corredor":

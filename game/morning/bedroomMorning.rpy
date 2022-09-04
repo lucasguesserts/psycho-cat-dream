@@ -20,6 +20,7 @@ menu actionsBedroomMorning:
         jump corridorMorning
     "Fazer carinho no gato":
         "%(player_name)s faz carinho no gato"
+        call audioPurr
         cat "purrr"
 
         $cat_happy = True

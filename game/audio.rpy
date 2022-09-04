@@ -3,7 +3,7 @@ define audio.doorOpeningEvening = "audio/doorOpeningEvening.mp3"
 define audio.doorOpeningMorning = "audio/doorOpeningMorning.mp3"
 define audio.staticTV = "audio/staticTVEvening.mp3"
 define audio.audioNightmare = "audio/terror.mp3"
-
+define audio.purr = "audio/catPurr.mp3"
 
 label audioOpenDoorMorning:
     play sound doorOpeningMorning
@@ -23,4 +23,8 @@ label audioStaticTV:
 
 label audioNightmare:
     play sound audioNightmare
+    return
+
+label audioPurr:
+    play sound purr
     return
