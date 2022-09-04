@@ -23,6 +23,8 @@ menu actionsCorridorEvening:
 
 label corridorEvening:
     scene corridorEveningImage
+    with pixellate
+    
     "%(player_name)s entrou no corredor"
 
     if vase_is_broken and first_time_in_corridor_evening:

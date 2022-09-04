@@ -1,28 +1,26 @@
 image livingroomMorningImage = "images/livingroomMorning.png"
-image TV = "images/TV.png"
+image TV = "images/unsyncedTV.png"
 
 init python:
     running_at_livingroom = False
     in_livingroom = False
 
 menu actionsLivingroomMorning:
-    "Correr na Sala" if running_at_corridor and not running_at_livingroom:
+    "Correr na sala" if running_at_corridor and not running_at_livingroom:
         "%(player_name)s brincou de correr em volta do sofá"
         player normal "Estou entediada"
         $running_at_livingroom = True
         jump actionsLivingroomMorning
     "Assistir TV":
         player normal "Quero ver um desenho"
-        hide player
-        hide livingroomMorningImage
-        
-        scene TV at center:
-            zoom 1.3
+        scene TV at center
+        with pixellate
         call audioStaticTV
 
+        hide livingroomMorningImage
+
         player normal "Mãe, a TV não ta funcionando!!"
-        hide TV
-        with pixellate
+
         stop sound
 
         jump livingRoomMorning
@@ -30,7 +28,7 @@ menu actionsLivingroomMorning:
         $in_livingroom = False
         call audioOpenDoorMorning
         jump corridorMorning
-    "Ir para Cozinha":
+    "Ir para cozinha":
         $in_livingroom = False
         call audioOpenDoorMorning
         jump kitchenMorning
@@ -40,14 +38,15 @@ label livingRoomMorning:
 
     if not in_livingroom:
         scene livingroomMorningImage at center
-        with zoomin
+        with pixellate
+        hide TV
+        
         "%(player_name)s entrou na sala"
 
         $in_livingroom = True
     else:
         scene livingroomMorningImage at center
-        show player normal at right:
-            xalign 0.7
-            zoom 0.05
+        with pixellate
+        hide TV
 
     jump actionsLivingroomMorning

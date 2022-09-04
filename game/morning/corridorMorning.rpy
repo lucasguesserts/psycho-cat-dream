@@ -45,8 +45,10 @@ menu actionsCorridorMorning:
 label corridorMorning:
     if not vase_is_broken:
         scene corridorMorningImage
+        with pixellate
     else:
         scene corridorMorningBrokenImage
+        with pixellate
         
     "E então %(player_name)s entrou no corredor"
 
