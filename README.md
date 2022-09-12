@@ -13,6 +13,7 @@ This game is available as executable [here](https://lucasguesserts.itch.io/psych
 * [Daniel Carvalho Silva](daniel.carvalho.silva2005@gmail.com)
 * [Tales Perroni Nicoletti](tales.nicoletti@icloud.com)
 * [Igor Gabriel Cavalcante de Carvalho Borges](devatdevian@gmail.com)
+* [Murilo Gomes da Silva](murilogomes526@gmail.com)
 * [Lucas Guesser Targino da Silva](lucasguesserts@gmail.com)
 
 ## References
